@@ -35,13 +35,15 @@ const statsigConnector = {
         logEvent(body);
     },
 
-    logEvent: function() {
+    logEvent: function(eventName, userID, value = null, metadata = null) {
         const body = {
             events: [
                 {
-                eventName,
-                time: Date.now(),
-                user: { userID }
+                    eventName,
+                    value,
+                    metadata,
+                    time: Date.now(),
+                    user: { userID }
                 }
             ],
             statsigMetadata: statsigMetadata,

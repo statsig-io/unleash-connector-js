@@ -1,6 +1,6 @@
 {
   "name": "statsig-unleash-connector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small package that helps connecting impression data from Unleash to Statsig to power analytics for feature toggles",
   "main": "index.js",
   "scripts": {
