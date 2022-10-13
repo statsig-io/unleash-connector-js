@@ -1,0 +1,1 @@
+Small package that helps connecting impression data from Unleash to Statsig to power analytics for feature toggles.
