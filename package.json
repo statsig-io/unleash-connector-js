@@ -1,0 +1,26 @@
+{
+  "name": "statsig-unleash-connector",
+  "version": "0.1.0",
+  "description": "Small package that helps connecting impression data from Unleash to Statsig to power analytics for feature toggles",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/statsig-io/unleash-connector-js.git"
+  },
+  "keywords": [
+    "statsig",
+    "unleash",
+    "ab test",
+    "feature toggle",
+    "feature flag"
+  ],
+  "author": "Statsig, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/statsig-io/unleash-connector-js/issues"
+  },
+  "homepage": "https://github.com/statsig-io/unleash-connector-js#readme"
+}
