@@ -1,6 +1,6 @@
 const statsigMetadata = {
     sdkType: "statsig-unleash-connector",
-    sdkVersion: "0.1.0",
+    sdkVersion: "0.1.3",
 }
 
 const statsigConnector = {
@@ -32,7 +32,7 @@ const statsigConnector = {
             statsigMetadata: statsigMetadata,
         };
 
-        logEvent(body);
+        this._logEventInternal(body);
     },
 
     logEvent: function(eventName, userID, value = null, metadata = null) {
@@ -48,10 +48,10 @@ const statsigConnector = {
             ],
             statsigMetadata: statsigMetadata,
         };
-        logEvent(body);
+        this._logEventInternal(body);
     },
 
-    _logEvent: async function(body) {
+    _logEventInternal: async function(body) {
         const params = {
             method: "POST",
             body: JSON.stringify(body),
